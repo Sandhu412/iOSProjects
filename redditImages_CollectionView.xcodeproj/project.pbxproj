@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		79569B5A23DC90AD0002A85B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79569B5823DC90AD0002A85B /* Main.storyboard */; };
 		79569B5C23DC90AF0002A85B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79569B5B23DC90AF0002A85B /* Assets.xcassets */; };
 		79569B5F23DC90AF0002A85B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79569B5D23DC90AF0002A85B /* LaunchScreen.storyboard */; };
+		79569B6723DC918E0002A85B /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79569B6623DC918E0002A85B /* MyCollectionViewCell.swift */; };
+		79569B6923DD26EE0002A85B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79569B6823DD26EE0002A85B /* ImageViewController.swift */; };
+		CFB0F826F253309DE24450A3 /* Pods_redditImages_CollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39596E0A7947A1F5F0300485 /* Pods_redditImages_CollectionView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39596E0A7947A1F5F0300485 /* Pods_redditImages_CollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_redditImages_CollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D724BFCBB41DFD7EF79F82B /* Pods-redditImages_CollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redditImages_CollectionView.debug.xcconfig"; path = "Target Support Files/Pods-redditImages_CollectionView/Pods-redditImages_CollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		61F5C8183017FB4B5026C999 /* Pods-redditImages_CollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-redditImages_CollectionView.release.xcconfig"; path = "Target Support Files/Pods-redditImages_CollectionView/Pods-redditImages_CollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		79569B4F23DC90AD0002A85B /* redditImages_CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redditImages_CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79569B5223DC90AD0002A85B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79569B5423DC90AD0002A85B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		79569B5B23DC90AF0002A85B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79569B5E23DC90AF0002A85B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79569B6023DC90AF0002A85B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79569B6623DC918E0002A85B /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		79569B6823DD26EE0002A85B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB0F826F253309DE24450A3 /* Pods_redditImages_CollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AE637CC4A50906129C3AF8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D724BFCBB41DFD7EF79F82B /* Pods-redditImages_CollectionView.debug.xcconfig */,
+				61F5C8183017FB4B5026C999 /* Pods-redditImages_CollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7011373C10CC650FBE8C21C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39596E0A7947A1F5F0300485 /* Pods_redditImages_CollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		79569B4623DC90AD0002A85B = {
 			isa = PBXGroup;
 			children = (
 				79569B5123DC90AD0002A85B /* redditImages_CollectionView */,
 				79569B5023DC90AD0002A85B /* Products */,
+				3AE637CC4A50906129C3AF8F /* Pods */,
+				7011373C10CC650FBE8C21C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				79569B5423DC90AD0002A85B /* SceneDelegate.swift */,
 				79569B5623DC90AD0002A85B /* ViewController.swift */,
 				79569B5823DC90AD0002A85B /* Main.storyboard */,
+				79569B6823DD26EE0002A85B /* ImageViewController.swift */,
+				79569B6623DC918E0002A85B /* MyCollectionViewCell.swift */,
 				79569B5B23DC90AF0002A85B /* Assets.xcassets */,
 				79569B5D23DC90AF0002A85B /* LaunchScreen.storyboard */,
 				79569B6023DC90AF0002A85B /* Info.plist */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79569B6323DC90AF0002A85B /* Build configuration list for PBXNativeTarget "redditImages_CollectionView" */;
 			buildPhases = (
+				7BF960120436234BCE7DB2B2 /* [CP] Check Pods Manifest.lock */,
 				79569B4B23DC90AD0002A85B /* Sources */,
 				79569B4C23DC90AD0002A85B /* Frameworks */,
 				79569B4D23DC90AD0002A85B /* Resources */,
+				542A70AB1939921CC3D132F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		542A70AB1939921CC3D132F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-redditImages_CollectionView/Pods-redditImages_CollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-redditImages_CollectionView/Pods-redditImages_CollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-redditImages_CollectionView/Pods-redditImages_CollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BF960120436234BCE7DB2B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-redditImages_CollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79569B4B23DC90AD0002A85B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +214,8 @@
 			files = (
 				79569B5723DC90AD0002A85B /* ViewController.swift in Sources */,
 				79569B5323DC90AD0002A85B /* AppDelegate.swift in Sources */,
+				79569B6923DD26EE0002A85B /* ImageViewController.swift in Sources */,
+				79569B6723DC918E0002A85B /* MyCollectionViewCell.swift in Sources */,
 				79569B5523DC90AD0002A85B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +358,7 @@
 		};
 		79569B6423DC90AF0002A85B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D724BFCBB41DFD7EF79F82B /* Pods-redditImages_CollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +376,7 @@
 		};
 		79569B6523DC90AF0002A85B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61F5C8183017FB4B5026C999 /* Pods-redditImages_CollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
